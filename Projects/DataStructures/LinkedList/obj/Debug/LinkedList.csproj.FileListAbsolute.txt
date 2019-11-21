@@ -1,0 +1,11 @@
+G:\COSC286\Projects\DataStructures\LinkedList\bin\Debug\LinkedList.exe.config
+G:\COSC286\Projects\DataStructures\LinkedList\bin\Debug\LinkedList.exe
+G:\COSC286\Projects\DataStructures\LinkedList\bin\Debug\LinkedList.pdb
+G:\COSC286\Projects\DataStructures\LinkedList\bin\Debug\DataStructuresCommon.dll
+G:\COSC286\Projects\DataStructures\LinkedList\bin\Debug\DataStructuresCommon.pdb
+G:\COSC286\Projects\DataStructures\LinkedList\bin\Debug\DataStructuresCommon.dll.config
+G:\COSC286\Projects\DataStructures\LinkedList\obj\Debug\LinkedList.csprojAssemblyReference.cache
+G:\COSC286\Projects\DataStructures\LinkedList\obj\Debug\LinkedList.csproj.CoreCompileInputs.cache
+G:\COSC286\Projects\DataStructures\LinkedList\obj\Debug\LinkedList.csproj.CopyComplete
+G:\COSC286\Projects\DataStructures\LinkedList\obj\Debug\LinkedList.exe
+G:\COSC286\Projects\DataStructures\LinkedList\obj\Debug\LinkedList.pdb

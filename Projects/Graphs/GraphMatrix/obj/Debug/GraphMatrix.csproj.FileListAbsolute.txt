@@ -1,0 +1,11 @@
+D:\COSC286\Projects\Graphs\GraphMatrix\obj\Debug\GraphMatrix.csprojAssemblyReference.cache
+D:\COSC286\Projects\Graphs\GraphMatrix\obj\Debug\GraphMatrix.csproj.CoreCompileInputs.cache
+D:\COSC286\Projects\Graphs\GraphMatrix\bin\Debug\GraphMatrix.exe.config
+D:\COSC286\Projects\Graphs\GraphMatrix\bin\Debug\GraphMatrix.exe
+D:\COSC286\Projects\Graphs\GraphMatrix\bin\Debug\GraphMatrix.pdb
+D:\COSC286\Projects\Graphs\GraphMatrix\obj\Debug\GraphMatrix.exe
+D:\COSC286\Projects\Graphs\GraphMatrix\obj\Debug\GraphMatrix.pdb
+D:\COSC286\Projects\Graphs\GraphMatrix\bin\Debug\Graphs.dll
+D:\COSC286\Projects\Graphs\GraphMatrix\bin\Debug\Graphs.pdb
+D:\COSC286\Projects\Graphs\GraphMatrix\bin\Debug\Graphs.dll.config
+D:\COSC286\Projects\Graphs\GraphMatrix\obj\Debug\GraphMatrix.csproj.CopyComplete

@@ -1,0 +1,7 @@
+D:\COSC286\Projects\Graphs\Graphs\bin\Debug\Graphs.dll.config
+D:\COSC286\Projects\Graphs\Graphs\bin\Debug\Graphs.dll
+D:\COSC286\Projects\Graphs\Graphs\bin\Debug\Graphs.pdb
+D:\COSC286\Projects\Graphs\Graphs\obj\Debug\Graphs.csprojAssemblyReference.cache
+D:\COSC286\Projects\Graphs\Graphs\obj\Debug\Graphs.csproj.CoreCompileInputs.cache
+D:\COSC286\Projects\Graphs\Graphs\obj\Debug\Graphs.dll
+D:\COSC286\Projects\Graphs\Graphs\obj\Debug\Graphs.pdb

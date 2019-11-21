@@ -1,0 +1,14 @@
+G:\COSC286\Projects\Hashtable\Hashtable\bin\Debug\Hashtable.exe.config
+G:\COSC286\Projects\Hashtable\Hashtable\bin\Debug\Hashtable.exe
+G:\COSC286\Projects\Hashtable\Hashtable\bin\Debug\Hashtable.pdb
+G:\COSC286\Projects\Hashtable\Hashtable\obj\Debug\Hashtable.csprojAssemblyReference.cache
+G:\COSC286\Projects\Hashtable\Hashtable\obj\Debug\Hashtable.csproj.CoreCompileInputs.cache
+G:\COSC286\Projects\Hashtable\Hashtable\obj\Debug\Hashtable.exe
+G:\COSC286\Projects\Hashtable\Hashtable\obj\Debug\Hashtable.pdb
+D:\COSC286\Projects\Hashtable\Hashtable\bin\Debug\Hashtable.exe.config
+D:\COSC286\Projects\Hashtable\Hashtable\bin\Debug\Hashtable.exe
+D:\COSC286\Projects\Hashtable\Hashtable\bin\Debug\Hashtable.pdb
+D:\COSC286\Projects\Hashtable\Hashtable\obj\Debug\Hashtable.csprojAssemblyReference.cache
+D:\COSC286\Projects\Hashtable\Hashtable\obj\Debug\Hashtable.csproj.CoreCompileInputs.cache
+D:\COSC286\Projects\Hashtable\Hashtable\obj\Debug\Hashtable.exe
+D:\COSC286\Projects\Hashtable\Hashtable\obj\Debug\Hashtable.pdb

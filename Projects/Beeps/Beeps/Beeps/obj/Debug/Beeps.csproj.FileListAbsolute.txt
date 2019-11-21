@@ -1,0 +1,7 @@
+D:\COSC286\Projects\Beeps\Beeps\Beeps\bin\Debug\Beeps.exe.config
+D:\COSC286\Projects\Beeps\Beeps\Beeps\bin\Debug\Beeps.exe
+D:\COSC286\Projects\Beeps\Beeps\Beeps\bin\Debug\Beeps.pdb
+D:\COSC286\Projects\Beeps\Beeps\Beeps\obj\Debug\Beeps.csprojAssemblyReference.cache
+D:\COSC286\Projects\Beeps\Beeps\Beeps\obj\Debug\Beeps.csproj.CoreCompileInputs.cache
+D:\COSC286\Projects\Beeps\Beeps\Beeps\obj\Debug\Beeps.exe
+D:\COSC286\Projects\Beeps\Beeps\Beeps\obj\Debug\Beeps.pdb

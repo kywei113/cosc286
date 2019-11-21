@@ -1,0 +1,14 @@
+G:\COSC286\Projects\DataStructures\DataStructuresCommon\bin\Debug\DataStructuresCommon.dll.config
+G:\COSC286\Projects\DataStructures\DataStructuresCommon\bin\Debug\DataStructuresCommon.dll
+G:\COSC286\Projects\DataStructures\DataStructuresCommon\bin\Debug\DataStructuresCommon.pdb
+G:\COSC286\Projects\DataStructures\DataStructuresCommon\obj\Debug\DataStructuresCommon.csprojAssemblyReference.cache
+G:\COSC286\Projects\DataStructures\DataStructuresCommon\obj\Debug\DataStructuresCommon.csproj.CoreCompileInputs.cache
+G:\COSC286\Projects\DataStructures\DataStructuresCommon\obj\Debug\DataStructuresCommon.dll
+G:\COSC286\Projects\DataStructures\DataStructuresCommon\obj\Debug\DataStructuresCommon.pdb
+G:\COSC286\Projects\CST227_CST234\DataStructuresCommon\bin\Debug\DataStructuresCommon.dll.config
+G:\COSC286\Projects\CST227_CST234\DataStructuresCommon\bin\Debug\DataStructuresCommon.dll
+G:\COSC286\Projects\CST227_CST234\DataStructuresCommon\bin\Debug\DataStructuresCommon.pdb
+G:\COSC286\Projects\CST227_CST234\DataStructuresCommon\obj\Debug\DataStructuresCommon.csprojAssemblyReference.cache
+G:\COSC286\Projects\CST227_CST234\DataStructuresCommon\obj\Debug\DataStructuresCommon.csproj.CoreCompileInputs.cache
+G:\COSC286\Projects\CST227_CST234\DataStructuresCommon\obj\Debug\DataStructuresCommon.dll
+G:\COSC286\Projects\CST227_CST234\DataStructuresCommon\obj\Debug\DataStructuresCommon.pdb
