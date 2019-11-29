@@ -9,3 +9,14 @@ D:\COSC286\Projects\Graphs\GraphMatrix\bin\Debug\Graphs.dll
 D:\COSC286\Projects\Graphs\GraphMatrix\bin\Debug\Graphs.pdb
 D:\COSC286\Projects\Graphs\GraphMatrix\bin\Debug\Graphs.dll.config
 D:\COSC286\Projects\Graphs\GraphMatrix\obj\Debug\GraphMatrix.csproj.CopyComplete
+D:\kywGitRepos\cosc286\Projects\Graphs\GraphMatrix\bin\Debug\GraphMatrix.exe.config
+D:\kywGitRepos\cosc286\Projects\Graphs\GraphMatrix\bin\Debug\GraphMatrix.exe
+D:\kywGitRepos\cosc286\Projects\Graphs\GraphMatrix\bin\Debug\GraphMatrix.pdb
+D:\kywGitRepos\cosc286\Projects\Graphs\GraphMatrix\bin\Debug\Graphs.dll
+D:\kywGitRepos\cosc286\Projects\Graphs\GraphMatrix\bin\Debug\Graphs.pdb
+D:\kywGitRepos\cosc286\Projects\Graphs\GraphMatrix\bin\Debug\Graphs.dll.config
+D:\kywGitRepos\cosc286\Projects\Graphs\GraphMatrix\obj\Debug\GraphMatrix.csprojAssemblyReference.cache
+D:\kywGitRepos\cosc286\Projects\Graphs\GraphMatrix\obj\Debug\GraphMatrix.csproj.CoreCompileInputs.cache
+D:\kywGitRepos\cosc286\Projects\Graphs\GraphMatrix\obj\Debug\GraphMatrix.csproj.CopyComplete
+D:\kywGitRepos\cosc286\Projects\Graphs\GraphMatrix\obj\Debug\GraphMatrix.exe
+D:\kywGitRepos\cosc286\Projects\Graphs\GraphMatrix\obj\Debug\GraphMatrix.pdb

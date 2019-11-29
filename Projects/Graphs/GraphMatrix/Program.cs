@@ -43,10 +43,41 @@ namespace GraphMatrix
             }
         }
 
+        static void TestShortestPath()
+        {
+            Console.WriteLine();
+
+            UGraphMatrix<string> uGraph = new UGraphMatrix<string>();
+
+            uGraph.AddVertex("A");
+            uGraph.AddVertex("B");
+            uGraph.AddVertex("C");
+            uGraph.AddVertex("D");
+            uGraph.AddVertex("E");
+            uGraph.AddVertex("F");
+            uGraph.AddVertex("G");
+            uGraph.AddVertex("H");
+
+            uGraph.AddEdge("A", "F", 10);
+            uGraph.AddEdge("A", "B", 28);
+            uGraph.AddEdge("B", "H", 13);
+            uGraph.AddEdge("F", "E", 25);
+            uGraph.AddEdge("B", "G", 14);
+            uGraph.AddEdge("B", "C", 16);
+            uGraph.AddEdge("E", "G", 24);
+            uGraph.AddEdge("E", "D", 22);
+            uGraph.AddEdge("G", "D", 18);
+            uGraph.AddEdge("D", "C", 12);
+
+            UGraphMatrix<string> shortestPath = (UGraphMatrix<string>)uGraph.ShortestWeightedPath("A", "D");
+            Console.WriteLine(shortestPath); 
+        }
+
+
         static void Main(string[] args)
         {
             UGraphMatrix<string> uGraph = new UGraphMatrix<string>();
-            
+
             AddData(uGraph);
 
             Console.WriteLine(uGraph);
@@ -55,6 +86,7 @@ namespace GraphMatrix
             TestEnumerateNeighbours(uGraph, "Reg");
             TestDepthFirst(uGraph, "SA");
             TestBreadthFirst(uGraph, "SA");
+            TestShortestPath();
         }
 
         static void AddData(UGraphMatrix<string> g)

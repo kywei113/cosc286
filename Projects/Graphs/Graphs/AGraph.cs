@@ -384,7 +384,182 @@ namespace Graphs
 
         public IGraph<T> ShortestWeightedPath(T start, T end)
         {
-            throw new NotImplementedException();
+            /*
+             vTable <-- new array of VertexData objects
+             startingIndex <-- index of starting points
+
+            Load vTable with initial data
+            Set start vertex's distance to 0
+            Create priority queue and enqueue the starting vertexData item
+
+            while there are still vertices in the priority queue
+                currentVertex <-- priorityQueue dequeue
+                if the currentVertex is not known
+                    set currentVertex to known
+
+                    for each neighbour wVertex of current
+                        wVertexData <-- get the VertexData object of wVertex
+                        edge <-- get the edge object connecting current to wVertex (need its weight)
+                        proposedDistance <-- current's distance + cost of edge
+
+                        if wVertexData's distance > proposedDistance
+                            wVertexData's distance <-- proposedDistance
+                            wVertexData's previous <-- currentVertex
+                            PriorityQueue enqueue wVertexData
+
+            Return a graph indicating the shortest path from start to end
+             */
+
+            List<VertexData> vTable = new List<VertexData>();
+
+            foreach(Vertex<T> v in vertices)
+            {
+                VertexData vd = new VertexData(v, double.PositiveInfinity, null);
+                vTable.Add(vd);
+            }
+
+            int startingIndex = GetVertex(start).Index;
+            vTable[startingIndex].Distance = 0;
+            PriorityQueue pQueue = new PriorityQueue();
+            pQueue.Enqueue(vTable[startingIndex]);
+
+            while(!pQueue.IsEmpty())
+            {
+                VertexData currentVertexData = pQueue.Dequeue();
+                
+                if(!currentVertexData.Known)
+                {
+                    currentVertexData.Known = true;
+
+                    foreach(Vertex<T> neighbourV in EnumerateNeighbours(currentVertexData.Vertex.Data))
+                    {
+                        VertexData vd = vTable[neighbourV.Index];
+                        Edge<T> e = GetEdge(currentVertexData.Vertex.Data, neighbourV.Data);
+
+                        double propCost = currentVertexData.Distance + e.Weight;
+
+                        if(vd.Distance > propCost)
+                        {
+                            vd.Distance = propCost;
+                            vd.Previous = currentVertexData.Vertex;
+                            pQueue.Enqueue(vd);
+                        }
+                    }
+                }
+            }
+
+            return BuildGraph(GetVertex(end), vTable.ToArray());
+        }
+
+        internal class VertexData : IComparable
+        {
+
+            public Vertex<T> Vertex;            //The vertex
+            public double Distance;             //Tentative distance form this vertex back to the start
+            public bool Known;                  //Whether the distnacne is tentative or the actual shortest distance
+            public Vertex<T> Previous;          //The prveious vertex for the current vertex
+
+            public VertexData(Vertex<T> vertex, double distance, Vertex<T> previous, bool known = false)
+            {
+                this.Vertex = vertex;
+                this.Distance = distance;
+                this.Previous = previous;
+                this.Known = known;
+            }
+
+            public int CompareTo(object obj)
+            {
+                return this.Distance.CompareTo(((VertexData)obj).Distance);
+            }
+
+            public override string ToString()
+            {
+                return "Vertex: " + Vertex + " Distance: " + Distance + " Previous: " + Previous.Data + " Known: " + Known;
+            }
+        }
+
+        private IGraph<T> BuildGraph(Vertex<T> vEnd, VertexData[] vTable)
+        {
+            /*
+             result <-- Instantiate a new graph instance
+             Add the End Vertex to the result
+             dataLast <-- vTable[Location of End]
+             previous <-- Previous of dataLast
+
+            while previous is not null
+                Add previous to result
+                Add the edge from last and previous
+
+                dataLast <--vTable[Location of previous]
+                previous <--previous of dataLast
+
+            return result
+             */
+
+            IGraph<T> result = (IGraph<T>)GetType().Assembly.CreateInstance(this.GetType().FullName);
+
+            result.AddVertex(vEnd.Data);
+
+            VertexData dataLast = vTable[vEnd.Index];
+            Vertex<T> prev = dataLast.Previous;
+
+            while (prev != null)
+            {
+                result.AddVertex(prev.Data);
+
+                Edge<T> eEdge = GetEdge(prev.Data, dataLast.Vertex.Data);
+
+                result.AddEdge(eEdge.From.Data, eEdge.To.Data, eEdge.Weight);
+
+                dataLast = vTable[prev.Index];
+                prev = dataLast.Previous;
+            }
+
+            return result;
+        }
+
+        internal class PriorityQueue
+        {
+            private List<VertexData> list;
+
+            public PriorityQueue()
+            {
+                list = new List<VertexData>();
+            }
+
+
+            //Return the lowest distance value in the queue
+            internal VertexData Dequeue()
+            {
+                VertexData retVal = list[0];
+                list.RemoveAt(0);
+                return retVal;
+            }
+
+            internal void Enqueue(VertexData data)
+            {
+                list.Add(data);
+
+                //Should do some research on the sorting algorithm done by a list
+                //Currently, we have an ALMOST sorted list when sort is called.
+                //Some algorithms are inefficient when operating on mostly sorted lists
+                list.Sort();
+            }
+
+            public bool IsEmpty()
+            {
+                return (list.Count <= 0);
+            }
+
+            public void DisplayQueue()
+            {
+                foreach(VertexData vd in list)
+                {
+                    Console.WriteLine(vd.ToString());
+                }
+
+                Console.WriteLine();
+            }
         }
         #endregion
 

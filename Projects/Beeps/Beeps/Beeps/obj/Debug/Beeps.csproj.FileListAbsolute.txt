@@ -5,3 +5,10 @@ D:\COSC286\Projects\Beeps\Beeps\Beeps\obj\Debug\Beeps.csprojAssemblyReference.ca
 D:\COSC286\Projects\Beeps\Beeps\Beeps\obj\Debug\Beeps.csproj.CoreCompileInputs.cache
 D:\COSC286\Projects\Beeps\Beeps\Beeps\obj\Debug\Beeps.exe
 D:\COSC286\Projects\Beeps\Beeps\Beeps\obj\Debug\Beeps.pdb
+D:\kywGitRepos\cosc286\Projects\Beeps\Beeps\Beeps\bin\Debug\Beeps.exe.config
+D:\kywGitRepos\cosc286\Projects\Beeps\Beeps\Beeps\bin\Debug\Beeps.exe
+D:\kywGitRepos\cosc286\Projects\Beeps\Beeps\Beeps\bin\Debug\Beeps.pdb
+D:\kywGitRepos\cosc286\Projects\Beeps\Beeps\Beeps\obj\Debug\Beeps.csprojAssemblyReference.cache
+D:\kywGitRepos\cosc286\Projects\Beeps\Beeps\Beeps\obj\Debug\Beeps.csproj.CoreCompileInputs.cache
+D:\kywGitRepos\cosc286\Projects\Beeps\Beeps\Beeps\obj\Debug\Beeps.exe
+D:\kywGitRepos\cosc286\Projects\Beeps\Beeps\Beeps\obj\Debug\Beeps.pdb

@@ -101,7 +101,7 @@ namespace GraphMatrix
 
         public override Edge<T> GetEdge(T from, T to)
         {
-            throw new NotImplementedException();
+            return matrix[GetVertex(from).Index, GetVertex(to).Index];
         }
 
         public override bool HasEdge(T from, T to)
