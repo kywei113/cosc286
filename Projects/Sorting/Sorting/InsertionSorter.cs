@@ -27,16 +27,13 @@ namespace Sorting
             T unsortedElement = array[indexCurrent];
             int index = indexCurrent - 1;
             
-            while(indexCurrent > 0 && unsortedElement.CompareTo(array[index]) == -1)
+            while(index >=0 && unsortedElement.CompareTo(array[index]) < 0)
             {
                 array[indexCurrent--] = array[index--];
             }
 
-            if(unsortedElement.CompareTo(array[indexCurrent]) == -1)
-            {
-                array[indexCurrent] = unsortedElement;
-                //array[index] = unsortedElement;
-            }
+            array[indexCurrent] = unsortedElement;
+
         }
     }
 }

@@ -46,16 +46,20 @@ namespace Sorting
 
             for(int i = 0; i < arraySize; i++)
             {
-                array[i] = r.Next(array.Length * 100);  
+                array[i] = r.Next(array.Length * 100);
 
                 //Or
-                /*
-                 * array[i] = i;
-                 * array[i] = arraySize - i
-                 */
+                //Best case scenario for Insertion Sort - Values already sorted In Order
+                //array[i] = i;
+
+                //Worst case scenario for insertion sort - Values sorted in opposite order
+                //array[i] = arraySize - i;
+
+
             }
 
-            TestSorter(new InsertionSorter<int>(array));
+            //TestSorter(new InsertionSorter<int>(array));
+            TestSorter(new QuickSorter<int>(array)); 
 
         }
 
