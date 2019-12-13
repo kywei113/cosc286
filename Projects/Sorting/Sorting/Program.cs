@@ -46,26 +46,53 @@ namespace Sorting
 
             for(int i = 0; i < arraySize; i++)
             {
-                array[i] = r.Next(array.Length * 100);
+                //array[i] = r.Next(array.Length);
 
                 //Or
                 //Best case scenario for Insertion Sort - Values already sorted In Order
                 //array[i] = i;
 
                 //Worst case scenario for insertion sort - Values sorted in opposite order
-                //array[i] = arraySize - i;
+                array[i] = arraySize - i;
 
 
             }
 
             //TestSorter(new InsertionSorter<int>(array));
-            TestSorter(new QuickSorter<int>(array)); 
+            //TestSorter(new QuickSorterMedianThree<int>(array));
+            TestSorter(new HeapSorter<int>(array));
 
         }
 
+        private static void DemoStableSort()
+        {
+            StableDemo[] array = new StableDemo[10];
+            Random r = new Random(42);
+
+            for(int i = 0; i < array.Length; i++)
+            {
+                array[i] = new StableDemo(r.Next(array.Length), i);
+            }
+
+            //Creating stable sorter
+            //ASorter<StableDemo> sorter = new InsertionSorter<StableDemo>(array);
+
+            //Unstable
+            //ASorter<StableDemo> sorter = new QuickSorter<StableDemo>(array);
+
+            //Unstable
+            ASorter<StableDemo> sorter = new HeapSorter<StableDemo>(array);
+
+            Console.WriteLine("Before Sort:\n" + sorter);
+            sorter.Sort();
+            Console.WriteLine("After Sort:\n" + sorter);
+        }
+
+
         static void Main(string[] args)
         {
-            SorterTest();
+            //SorterTest();
+            DemoStableSort();
 
         }
     }

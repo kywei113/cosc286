@@ -27,19 +27,32 @@ namespace Sorting
             {
                 int pivotIndex = FindPivot(iStart, iEnd);   //PivotLocation <-- FindPivot
 
-                //Swap out the pivot to the right-most position in the array
-                Swap(pivotIndex, iEnd);
-
-                int partitionIndex = Partition(iStart, iEnd - 1, this.array[iEnd]);     //PartitionIndex <-- Partition relative to the pivot value
-
-                //Swap the pivot to its correct location
-                if(this.array[partitionIndex].CompareTo(this.array[iEnd]) == 1)
-                {
-                    Swap(partitionIndex, iEnd);
-                }
                 
-                QuickSortRec(iStart, partitionIndex);       //Recursively QuickSort the array left of the pivot
-                QuickSortRec(partitionIndex + 1, iEnd);     //Recursively QuickSort the array right of the pivot
+                Swap(pivotIndex, iEnd);             //Swap out the pivot to the right-most position in the array
+
+                int partitionIndex = Partition(iStart - 1, iEnd, this.array[iEnd]);     //PartitionIndex <-- Partition relative to the pivot value
+
+                
+                Swap(partitionIndex, iEnd);                 //Swap the pivot to its correct location
+
+                if(iEnd - iStart > 1000)
+                {
+                    Parallel.Invoke(
+                        () => QuickSortRec(iStart, partitionIndex - 1),   //Recursively QuickSort the array left of the pivot
+                        () => QuickSortRec(partitionIndex + 1, iEnd)     //Recursively QuickSort the array right of the pivot
+                    );
+                }
+                else
+                {
+                    QuickSortRec(iStart, partitionIndex - 1);
+                    QuickSortRec(partitionIndex + 1, iEnd);
+                }
+
+
+
+
+
+
             }
         }
 
@@ -52,23 +65,12 @@ namespace Sorting
         /// <returns>The partition index where lefet pointer ends</returns>
         private int Partition(int left, int right, T pivotValue)
         {
-            while(left < right)
+            do
             {
-                while (this.array[left].CompareTo(pivotValue) < 0 && left < right)
-                {
-                    left++;
-                };
-
-                while (this.array[right].CompareTo(pivotValue) > 0 && right > left)
-                {
-                    right--;
-                };
-
-                if (this.array[left].CompareTo(this.array[right]) == 1)
-                {
-                    Swap(left, right);
-                }
-            }
+                while (array[++left].CompareTo(pivotValue) < 0) ;
+                while (right > left && array[--right].CompareTo(pivotValue) > 0) ;
+                Swap(left, right);
+            } while (left < right);
 
             return left;
         }
