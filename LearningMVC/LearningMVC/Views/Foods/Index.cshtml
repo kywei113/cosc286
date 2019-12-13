@@ -1,0 +1,47 @@
+﻿@model IEnumerable<LearningMVC.Models.Food>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.brand)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.flavour)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.type)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.brand)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.flavour)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.type)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.foodId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.foodId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.foodId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
